@@ -32,7 +32,6 @@ homebrew_cask_packages:
   - name: discord
   - name: docker
   - name: drawio
-  - name: fig
   - name: firefox
   - name: font-hackgen
   - name: google-chrome
@@ -55,11 +54,17 @@ apple_store_packages:
   - id: 405399194 # Kindle
   - id: 1295203466 # Microsoft Remote Desktop
   - id: 1451685025 # WireGuard
-dot_files:
+clones:
+  - url: https://github.com/tmux-plugins/tpm
+    path: ~/.tmux/plugin/tmp
+dotfiles:
+  - .config
   - .gitignore
   - .latexmkrc
+  - .tmux.conf
   - .vimrc
   - .zprofile
+  - .zshrc
 code_extensions:
   - atlassian.atlascode
   - DavidAnson.vscode-markdownlint
@@ -89,6 +94,3 @@ code_extensions:
   - usernamehw.errorlens
   - vscodevim.vim
   - yzhang.markdown-all-in-one
-clones:
-  - url: https://github.com/tmux-plugins/tpm
-    path: ~/.tmux/plugin/tmp

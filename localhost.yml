@@ -6,6 +6,6 @@
     - homebrew
     - homebrew_cask
     - mas
+    - git_clone
     - dotfiles
     - vscode
-    - git_clone

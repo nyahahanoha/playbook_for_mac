@@ -1,29 +1,17 @@
 - block:
+    - name: checkout dotfiles
+      ansible.builtin.git:
+        repo: https://github.com/nyahahanoha/dotfiles
+        dest: ~/dotfiles/
+        remote: main
 
-  ########
-  # copy #
-  ########
-  - name: copy dotfiles
-    template:
-      src: template{{ item }}
-      dest: ~/{{ item }}
-    with_items: '{{ dot_files }}'
-
-  #################
-  # symbolic link #
-  #################
-  # - name: checkout dotfiles
-  #   git:
-  #     repo: https://github.com/{your_repository}/dotfiles.git
-  #     dest: ~/dotfiles
-
-  # - name: create symlinks
-  #   file:
-  #     src: ~/dotfiles/{{ item }}
-  #     dest: ~/{{ item }}
-  #     state: link
-  #     force: yes
-  #   with_items: '{{ dot_files }}'
+    - name: create symlinks
+      ansible.builtin.file:
+        src: ~/dotfiles/{{ item }}
+        dest: ~/{{ item }}
+        state: link
+        force: yes
+      with_items: "{{ dotfiles }}"
 
   tags:
     - dotfiles
