@@ -4,6 +4,7 @@
         repo: https://github.com/nyahahanoha/dotfiles
         dest: ~/dotfiles/
         remote: main
+        force: yes
 
     - name: create symlinks
       ansible.builtin.file:

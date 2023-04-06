@@ -56,7 +56,7 @@ apple_store_packages:
   - id: 1451685025 # WireGuard
 clones:
   - url: https://github.com/tmux-plugins/tpm
-    path: ~/.tmux/plugin/tmp
+    path: ~/.tmux/plugin/tpm
 dotfiles:
   - .config
   - .gitignore
