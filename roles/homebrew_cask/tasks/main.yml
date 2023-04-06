@@ -1,9 +1,12 @@
 - block:
     - name: homebrew cask packages install
+      # environment:
+      #   HOMEBREW_CASK_OPTS: --appdir=/Applications
       community.general.homebrew_cask:
         name: "{{ item.name }}"
-        state: '{{ item.state | default("present") }}'
-        upgrade_all: true
+        state: "present"
+        path: "/opt/homebrew/bin"
+        greedy: true
       with_items: "{{ homebrew_cask_packages }}"
 
   tags:

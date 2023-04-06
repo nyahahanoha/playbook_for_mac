@@ -18,11 +18,13 @@ homebrew_packages:
   - name: rust-analyzer
   - name: rustup
   - name: telnet
+  - name: tmux
   - name: tree
   - name: webtorrent-cli
   - name: wireguard-tools
   - name: wget
 homebrew_cask_packages:
+  - name: alacritty
   - name: bitwarden
   - name: clipy
   - name: deepl
