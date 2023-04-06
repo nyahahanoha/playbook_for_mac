@@ -80,6 +80,7 @@ code_extensions:
   - ms-vscode-remote.remote-ssh-edit
   - ms-vscode.remote-explorer
   - oderwat.indent-rainbow
+  - redhat.ansible
   - redhat.vscode-yaml
   - shardulm94.trailing-spaces
   - slightc.pip-manager
