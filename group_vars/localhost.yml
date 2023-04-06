@@ -1,6 +1,10 @@
 homebrew_taps:
+  - homebrew/bundle
   - homebrew/cask
+  - homebrew/cask-fonts
+  - homebrew/cask-versions
   - homebrew/core
+  - homebrew/services
 homebrew_packages:
   - name: ansible
   - name: aria2
@@ -25,6 +29,9 @@ homebrew_cask_packages:
   - name: discord
   - name: docker
   - name: drawio
+  - name: fig
+  - name: firefox
+  - name: font-hackgen
   - name: google-chrome
   - name: google-drive
   - name: iterm2
