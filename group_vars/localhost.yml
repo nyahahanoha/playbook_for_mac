@@ -6,10 +6,7 @@ homebrew_packages:
   - name: aria2
   - name: gh
   - name: git
-  - name: iproute2mac
-  - name: jq
   - name: mas
-  - name: mysql
   - name: netcat
   - name: openvpn
   - name: python-tk
@@ -21,7 +18,6 @@ homebrew_packages:
   - name: webtorrent-cli
   - name: wireguard-tools
   - name: wget
-  - name: yarn
 homebrew_cask_packages:
   - name: bitwarden
   - name: clipy
@@ -43,7 +39,6 @@ homebrew_cask_packages:
   - name: qlstephen
   - name: utm
   - name: visual-studio-code
-  - name: vmware-fusion
   - name: wireshark
 apple_store_packages:
   - id: 1193539993 # Brother iPrint&Scan
