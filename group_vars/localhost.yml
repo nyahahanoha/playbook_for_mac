@@ -23,6 +23,7 @@ homebrew_packages:
   - name: webtorrent-cli
   - name: wireguard-tools
   - name: wget
+  - name: z
 homebrew_cask_packages:
   - name: alacritty
   - name: bitwarden
@@ -37,7 +38,6 @@ homebrew_cask_packages:
   - name: google-chrome
   - name: google-drive
   - name: hammerspoon
-  - name: iterm2
   - name: karabiner-elements
   - name: multipass
   - name: mactex-no-gui
