@@ -1,0 +1,21 @@
+- block:
+    - name: homebrew update
+      homebrew:
+        update_homebrew: yes
+
+    - name: homebrew tap
+      community.general.homebrew_tap:
+        name: "{{ item }}"
+        state: present
+      with_items: "{{ homebrew_taps }}"
+
+    - name: homebrew packages install
+      community.general.homebrew:
+        name: "{{ item.name }}"
+        state: '{{ item.state | default("present") }}'
+        path: "/opt/homebrew/bin"
+        upgrade_all: true
+      with_items: "{{ homebrew_packages }}"
+
+  tags:
+    - homebrew

@@ -1,0 +1,85 @@
+homebrew_taps:
+  - homebrew/cask
+  - homebrew/core
+homebrew_packages:
+  - name: ansible
+  - name: aria2
+  - name: gh
+  - name: git
+  - name: iproute2mac
+  - name: jq
+  - name: mas
+  - name: mysql
+  - name: netcat
+  - name: openvpn
+  - name: python-tk
+  - name: python-tk@3.11
+  - name: rust-analyzer
+  - name: rustup
+  - name: telnet
+  - name: tree
+  - name: webtorrent-cli
+  - name: wireguard-tools
+  - name: wget
+  - name: yarn
+homebrew_cask_packages:
+  - name: bitwarden
+  - name: clipy
+  - name: deepl
+  - name: discord
+  - name: docker
+  - name: drawio
+  - name: google-chrome
+  - name: google-drive
+  - name: iterm2
+  - name: karabiner-elements
+  - name: multipass
+  - name: mactex-no-gui
+  - name: mendeley
+  - name: microsoft-teams
+  - name: notion
+  - name: owasp-zap
+  - name: postman
+  - name: qlstephen
+  - name: utm
+  - name: visual-studio-code
+  - name: vmware-fusion
+  - name: wireshark
+apple_store_packages:
+  - id: 1193539993 # Brother iPrint&Scan
+  - id: 405399194 # Kindle
+  - id: 1295203466 # Microsoft Remote Desktop
+  - id: 1451685025 # WireGuard
+dot_files:
+  - .gitignore
+  - .latexmkrc
+  - .vimrc
+  - .zprofile
+code_extensions:
+  - atlassian.atlascode
+  - DavidAnson.vscode-markdownlint
+  - HookyQR.beautify
+  - James-Yu.latex-workshop
+  - mhutchie.git-graph
+  - ms-azuretools.vscode-docker
+  - MS-CEINTL.vscode-language-pack-ja
+  - ms-python.isort
+  - ms-python.python
+  - ms-python.vscode-pylance
+  - ms-toolsai.jupyter
+  - ms-toolsai.jupyter-keymap
+  - ms-toolsai.jupyter-renderers
+  - ms-toolsai.vscode-jupyter-cell-tags
+  - ms-toolsai.vscode-jupyter-slideshow
+  - ms-vscode-remote.remote-containers
+  - ms-vscode-remote.remote-ssh
+  - ms-vscode-remote.remote-ssh-edit
+  - ms-vscode.remote-explorer
+  - oderwat.indent-rainbow
+  - redhat.vscode-yaml
+  - shardulm94.trailing-spaces
+  - slightc.pip-manager
+  - techer.open-in-browser
+  - usernamehw.errorlens
+  - vscodevim.vim
+  - yzhang.markdown-all-in-one

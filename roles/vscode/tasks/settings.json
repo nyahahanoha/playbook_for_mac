@@ -1,0 +1,75 @@
+{
+    "yaml.schemas": {
+        "file:///Users/nyahahanoha/.vscode/extensions/atlassian.atlascode-3.0.3/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+    },
+    "redhat.telemetry.enabled": true,
+    // ---------- Language ----------
+    "[tex]": {
+        // スニペット補完中にも補完を使えるようにする
+        "editor.suggest.snippetsPreventQuickSuggestions": false,
+        // インデント幅を2にする
+        "editor.tabSize": 2
+    },
+    "[latex]": {
+        // スニペット補完中にも補完を使えるようにする
+        "editor.suggest.snippetsPreventQuickSuggestions": false,
+        // インデント幅を2にする
+        "editor.tabSize": 2
+    },
+    "[bibtex]": {
+        // インデント幅を2にする
+        "editor.tabSize": 2
+    },
+    // ---------- LaTeX Workshop ----------
+    // 使用パッケージのコマンドや環境の補完を有効にする
+    "latex-workshop.intellisense.package.enabled": true,
+    // ビルドのレシピ
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "latexmk",
+            "tools": [
+                "latexmk"
+            ]
+        },
+    ],
+    // ビルドのレシピに使われるパーツ
+    "latex-workshop.latex.tools": [
+        {
+            "name": "latexmk",
+            "command": "latexmk",
+            "args": [
+                "-silent",
+                "%DOC%"
+            ],
+        },
+    ],
+    "latex-workshop.view.pdf.viewer": "tab",
+    "terminal.integrated.env.osx": {
+        "FIG_NEW_SESSION": "1"
+    },
+    "explorer.confirmDelete": false,
+    "editor.accessibilitySupport": "off",
+    "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": true,
+    "json.schemas": [],
+    "[python]": {
+        "editor.tabSize": 4
+    },
+    "git.autofetch": true,
+    "vim.vimrc.enable": true,
+    "vim.vimrc.path": "/Users/nyahahanoha/.vimrc",
+    "editor.formatOnSave": true,
+    "[javascript]": {
+        "editor.defaultFormatter": "HookyQR.beautify"
+    },
+    "atlascode.jira.lastCreateSiteAndProject": {
+        "siteId": "",
+        "projectKey": ""
+    },
+    "editor.renderControlCharacters": false,
+    "python.diagnostics.sourceMapsEnabled": true,
+    "python.experiments.enabled": false,
+    "explorer.confirmDragAndDrop": false,
+    "editor.semanticTokenColorCustomizations": {}
+}
+

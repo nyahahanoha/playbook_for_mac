@@ -1,0 +1,17 @@
+- block:
+    - name: visual studio code library directory
+      file: path="~/Library/Application Support/Code/User"
+        state=directory
+
+    - name: visual studio code basic setting
+      ansible.builtin.copy:
+        src: settings.json
+        dest: "/Users/nyahahanoha/Library/Application\ Support/Code/User/"
+        mode: 0644
+
+    - name: visual studio code install extension
+      raw: "code --install-extension {{ item }}"
+      with_items: "{{ code_extensions }}"
+
+  tags:
+    - vscode
