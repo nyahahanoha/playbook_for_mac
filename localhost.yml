@@ -7,4 +7,5 @@
     # - homebrew_cask
     # - mas
     # - dotfiles
-    - vscode
+    # - vscode
+    - git_clone

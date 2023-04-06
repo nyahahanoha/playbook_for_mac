@@ -36,6 +36,7 @@ homebrew_cask_packages:
   - name: font-hackgen
   - name: google-chrome
   - name: google-drive
+  - name: hammerspoon
   - name: iterm2
   - name: karabiner-elements
   - name: multipass
@@ -88,3 +89,6 @@ code_extensions:
   - usernamehw.errorlens
   - vscodevim.vim
   - yzhang.markdown-all-in-one
+clones:
+  - url: https://github.com/tmux-plugins/tpm
+    path: ~/.tmux/plugin/tmp

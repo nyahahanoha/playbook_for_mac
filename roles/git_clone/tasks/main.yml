@@ -1,0 +1,9 @@
+- block:
+    - name: git clone
+      ansible.builtin.git:
+        repo: "{{ item.url }}"
+        dest: "{{ item.path }}"
+      with_items: "{{ clones }}"
+
+  tags:
+    - clones
