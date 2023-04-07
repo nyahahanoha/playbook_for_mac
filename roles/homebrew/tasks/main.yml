@@ -9,12 +9,15 @@
         state: present
       with_items: "{{ homebrew_taps }}"
 
+    - name: homebrew packages upgrade
+      community.general.homebrew:
+        upgrade_all:
+
     - name: homebrew packages install
       community.general.homebrew:
         name: "{{ item.name }}"
         state: '{{ item.state | default("present") }}'
         path: "/opt/homebrew/bin"
-        upgrade_all: true
       with_items: "{{ homebrew_packages }}"
 
   tags:

@@ -1,9 +1,12 @@
 - block:
+    - name: apple store packages upgrede
+      community.general.mas:
+        upgrade_all: true
+
     - name: apple store packages install
       community.general.mas:
         id: "{{ item.id }}"
         state: '{{ item.state | default("present") }}'
-        upgrade_all: true
       with_items: "{{ apple_store_packages }}"
 
   tags:
