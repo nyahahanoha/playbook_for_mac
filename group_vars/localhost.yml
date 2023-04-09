@@ -45,7 +45,7 @@ homebrew_cask_packages:
   - name: notion
   - name: owasp-zap
   - name: postman
-  - name: qlstephen
+  - name: raspberry-pi-imager
   - name: utm
   - name: visual-studio-code
   - name: wireshark
