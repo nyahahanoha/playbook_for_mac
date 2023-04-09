@@ -12,6 +12,7 @@
     - name: homebrew packages upgrade
       community.general.homebrew:
         upgrade_all: true
+        path: "/opt/homebrew/bin"
 
     - name: homebrew packages install
       community.general.homebrew:
