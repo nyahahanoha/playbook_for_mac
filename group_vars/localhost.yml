@@ -65,6 +65,7 @@ dotfiles:
   - .vimrc
   - .zprofile
   - .zshrc
+  - .hammerspoon
 code_extensions:
   - atlassian.atlascode
   - DavidAnson.vscode-markdownlint

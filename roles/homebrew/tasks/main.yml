@@ -11,7 +11,7 @@
 
     - name: homebrew packages upgrade
       community.general.homebrew:
-        upgrade_all:
+        upgrade_all: true
 
     - name: homebrew packages install
       community.general.homebrew:
