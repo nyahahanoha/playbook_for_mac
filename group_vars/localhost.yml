@@ -8,6 +8,7 @@ homebrew_taps:
 homebrew_packages:
   - name: ansible
   - name: aria2
+  - name: vsftpd
   - name: gh
   - name: git
   - name: mas
