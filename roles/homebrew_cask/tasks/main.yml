@@ -4,7 +4,7 @@
       #   HOMEBREW_CASK_OPTS: --appdir=/Applications
       community.general.homebrew_cask:
         name: "{{ item.name }}"
-        state: "present"
+        state: "{{ item.state || default('latest') }}"
         path: "/opt/homebrew/bin"
         greedy: true
       with_items: "{{ homebrew_cask_packages }}"

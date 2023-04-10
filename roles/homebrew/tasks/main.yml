@@ -6,18 +6,13 @@
     - name: homebrew tap
       community.general.homebrew_tap:
         name: "{{ item }}"
-        state: present
+        state: latest
       with_items: "{{ homebrew_taps }}"
-
-    - name: homebrew packages upgrade
-      community.general.homebrew:
-        upgrade_all: true
-        path: "/opt/homebrew/bin"
 
     - name: homebrew packages install
       community.general.homebrew:
         name: "{{ item.name }}"
-        state: '{{ item.state | default("present") }}'
+        state: '{{ item.state | default("latest") }}'
         path: "/opt/homebrew/bin"
       with_items: "{{ homebrew_packages }}"
 

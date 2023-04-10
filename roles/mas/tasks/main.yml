@@ -6,7 +6,7 @@
     - name: apple store packages install
       community.general.mas:
         id: "{{ item.id }}"
-        state: '{{ item.state | default("present") }}'
+        state: '{{ item.state | default("latest") }}'
       with_items: "{{ apple_store_packages }}"
 
   tags:
