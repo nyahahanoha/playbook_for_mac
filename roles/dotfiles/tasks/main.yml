@@ -1,7 +1,7 @@
 - block:
     - name: checkout dotfiles
       ansible.builtin.git:
-        repo: https://github.com/nyahahanoha/dotfiles
+        repo: https://github.com/nyahahanoha/dotfiles_for_mac
         dest: ~/dotfiles/
         remote: main
         force: yes

@@ -25,6 +25,7 @@ homebrew_packages:
   - name: wireguard-tools
   - name: wget
   - name: z
+  - name: yarn
 homebrew_cask_packages:
   - name: alacritty
   - name: bitwarden
@@ -36,6 +37,7 @@ homebrew_cask_packages:
   - name: firefox
   - name: font-hackgen
   - name: google-chrome
+    state: present
   - name: google-drive
   - name: hammerspoon
   - name: karabiner-elements
@@ -49,7 +51,8 @@ homebrew_cask_packages:
   - name: raspberry-pi-imager
   - name: utm
   - name: visual-studio-code
-  - name: wireshark
+  # - name: wireshark
+  - name: wireshark-chmodbpf
 apple_store_packages:
   - id: 1193539993 # Brother iPrint&Scan
   - id: 405399194 # Kindle
