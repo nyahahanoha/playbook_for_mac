@@ -8,12 +8,14 @@ homebrew_taps:
 homebrew_packages:
   - name: ansible
   - name: aria2
-  - name: vsftpd
   - name: gh
   - name: git
+  - name: lima
   - name: mas
   - name: netcat
+  - name: nmap
   - name: openvpn
+  - name: pyenv
   - name: python-tk
   - name: python-tk@3.11
   - name: rust-analyzer
@@ -21,14 +23,16 @@ homebrew_packages:
   - name: telnet
   - name: tmux
   - name: tree
+  - name: vsftpd
   - name: webtorrent-cli
-  - name: wireguard-tools
   - name: wget
-  - name: z
+  - name: wireguard-tools
   - name: yarn
+  - name: z
 homebrew_cask_packages:
   - name: alacritty
   - name: bitwarden
+  - name: burp-suite
   - name: clipy
   - name: deepl
   - name: discord
@@ -36,8 +40,9 @@ homebrew_cask_packages:
   - name: drawio
   - name: firefox
   - name: font-hackgen
+  - name: ghidra
+  - name: gns3
   - name: google-chrome
-    state: present
   - name: google-drive
   - name: hammerspoon
   - name: karabiner-elements
@@ -49,10 +54,12 @@ homebrew_cask_packages:
   - name: owasp-zap
   - name: postman
   - name: raspberry-pi-imager
+  - name: slack
   - name: utm
   - name: visual-studio-code
   # - name: wireshark
   - name: wireshark-chmodbpf
+  - name: zoom
 apple_store_packages:
   - id: 1193539993 # Brother iPrint&Scan
   - id: 405399194 # Kindle
@@ -73,7 +80,6 @@ dotfiles:
 code_extensions:
   - atlassian.atlascode
   - DavidAnson.vscode-markdownlint
-  - HookyQR.beautify
   - James-Yu.latex-workshop
   - mhutchie.git-graph
   - ms-azuretools.vscode-docker
@@ -93,6 +99,7 @@ code_extensions:
   - oderwat.indent-rainbow
   - redhat.ansible
   - redhat.vscode-yaml
+  - rust-lang.rust-analyzer
   - shardulm94.trailing-spaces
   - slightc.pip-manager
   - techer.open-in-browser

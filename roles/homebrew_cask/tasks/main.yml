@@ -6,7 +6,6 @@
         name: "{{ item.name }}"
         state: "{{ item.state | default('latest') }}"
         path: "/opt/homebrew/bin"
-        greedy: true
       with_items: "{{ homebrew_cask_packages }}"
 
   tags:
