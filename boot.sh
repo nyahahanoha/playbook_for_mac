@@ -34,5 +34,5 @@ if ! command -v brew > /dev/null 2>&1; then
 fi
 
 brew install ansible git
-
+ansible-galaxy collection install -r requirement.yml
 ansible-playbook localhost.yml
