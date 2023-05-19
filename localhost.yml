@@ -10,6 +10,6 @@
     - mas
     - git_clone
     - pip
-    - vscode
     - yarn
+    - vscode
     - dotfiles
