@@ -30,7 +30,7 @@
             "tools": [
                 "latexmk"
             ]
-        },
+        }
     ],
     // ビルドのレシピに使われるパーツ
     "latex-workshop.latex.tools": [
@@ -40,8 +40,8 @@
             "args": [
                 "-silent",
                 "%DOC%"
-            ],
-        },
+            ]
+        }
     ],
     "latex-workshop.view.pdf.viewer": "tab",
     "terminal.integrated.env.osx": {
@@ -72,4 +72,3 @@
     "explorer.confirmDragAndDrop": false,
     "editor.semanticTokenColorCustomizations": {}
 }
-

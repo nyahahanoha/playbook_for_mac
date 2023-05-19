@@ -15,7 +15,7 @@ homebrew_packages:
   - name: netcat
   - name: nmap
   - name: openvpn
-  - name: pyenv
+  - name: python@3.11
   - name: python-tk
   - name: python-tk@3.11
   - name: rust-analyzer
@@ -106,3 +106,10 @@ code_extensions:
   - usernamehw.errorlens
   - vscodevim.vim
   - yzhang.markdown-all-in-one
+python_modules:
+  - name: matplotlib
+  - name: numpy
+  - name: pip
+  - name: pytest
+yarn_packages:
+  - name: chokidar-cli

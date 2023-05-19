@@ -1,0 +1,9 @@
+- block:
+    - name: python modules install
+      ansible.builtin.pip:
+        name: "{{ item.name }}"
+        state: '{{ itme.state | default("latest") }}'
+      with_items: "{{ python_modules }}"
+
+  tags:
+    - pip

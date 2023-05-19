@@ -1,0 +1,10 @@
+- block:
+    - name: yarn packages install
+      community.general.yarn:
+        name: "{{ item.name }}"
+        state: '{{ item.state | default("latest") }}'
+        global: '{{ item.global | default("true") }}'
+      with_items: "{{ yarn_packages }}"
+
+  tags:
+    - yarn
