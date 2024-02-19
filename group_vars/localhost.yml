@@ -9,62 +9,77 @@ homebrew_packages:
   - name: ansible
   - name: aria2
   - name: arp-scan
+  - name: clang-format
+  - name: cloudflared
+  - name: gcc
   - name: gh
   - name: git
-  - name: lima
+  - name: gping
+  - name: gtop
+  - name: htop
   - name: mas
+  - name: neofetch
+  - name: neovim
   - name: netcat
   - name: nmap
+  - name: node # this is need to use yarn
   - name: openvpn
-  - name: python@3.11
+  - name: python
   - name: python-tk
   - name: python-tk@3.11
   - name: qemu
   - name: rust-analyzer
+  - name: rustscan
   - name: rustup
-  - name: socket_vmnet
+  - name: starship
   - name: telnet
   - name: tmux
+  - name: tor
   - name: tree
   - name: wget
   - name: wireguard-tools
   - name: yarn
   - name: z
+  - name: zplug
 homebrew_cask_packages:
   - name: alacritty
-  - name: arc
-  - name: bitwarden
   - name: burp-suite
   - name: clipy
-  - name: deepl
   - name: discord
   - name: drawio
   - name: firefox
-  - name: font-hackgen
+  - name: font-hack-nerd-font
+  - name: font-moslo-lg
   - name: ghidra
   - name: gns3
   - name: google-chrome
   - name: hammerspoon
+  - name: hex-fiend
+  - name: macfuse
   - name: mactex-no-gui
-  - name: mendeley
   - name: microsoft-office
   - name: microsoft-teams
-  - name: multipass
   - name: notion
+  - name: obsidian
+  - name: orbstack
   - name: owasp-zap
   - name: postman
   - name: raspberry-pi-imager
-  - name: shiftit
+  - name: save-hollywood
   - name: slack
+  - name: tor-browser
   - name: utm
   - name: visual-studio-code
-  - name: vmware-fusion
   - name: wireshark
+  - name: zap
   - name: zoom
 apple_store_packages:
   - id: 1193539993 # Brother iPrint&Scan
   - id: 405399194 # Kindle
+  - id: 539883307 # LINE
   - id: 1295203466 # Microsoft Remote Desktop
+  - id: 1475387142 # Tailscale
+  - id: 1451685025 # Wireguard
 clones:
   - url: https://github.com/tmux-plugins/tpm
     path: ~/.tmux/plugins/tpm
@@ -108,7 +123,9 @@ code_extensions:
 python_modules:
   - name: matplotlib
   - name: numpy
+  - name: pandas
   - name: pip
   - name: pytest
+  - name: scapy
 yarn_packages:
   - name: chokidar-cli
